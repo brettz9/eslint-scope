@@ -26,5 +26,10 @@ module.exports = {
             }
         }
     ],
-    ignorePatterns: ["/dist", "/coverage"]
+    ignorePatterns: ["/dist", "/coverage"],
+    rules: {
+        "jsdoc/check-tag-names": ["error", {
+            definedTags: ["local"]
+        }]
+    }
 };
